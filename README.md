@@ -70,7 +70,7 @@ You will be marked on the following criteria:
 
 ToDo: Add your code explanation here
 
-I followed your instructions to install all the software and dependencies.
+Followed your instructions to install all the software and dependencies.
 
 For the backend:
 -Implemented additional processes in the project using MVC architecture. 
