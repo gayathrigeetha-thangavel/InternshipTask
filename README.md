@@ -69,3 +69,15 @@ You will be marked on the following criteria:
 ## Implementation
 
 ToDo: Add your code explanation here
+
+I followed your instructions to install all the software and dependencies.
+
+For the backend:
+-Implemented additional processes in the project using MVC architecture. 
+-Defined the user entities and connections in the model classes. The user controller class handles the APIs for requests and responses. 
+-Implemented CRUD operations such as create, get, update, delete, and view all users. The user services class managed to establish the connection between the MongoDB database and the API calls. 
+-Finally, all the services are added to the containers in the program.cs file.
+
+Frontend:
+-Implemented the POST method to create the user and integrated it with the backend. 
+-Additionally, added some validation for the textboxes to check the username and password shouldn't be null or empty value to proceeding the user creation.

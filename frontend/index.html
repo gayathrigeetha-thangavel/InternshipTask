@@ -2,24 +2,42 @@
 <html>
   <head>
     <title>User Creation Form</title>
-    <script src="main.js"></script>
+    <script src="/frontend/main.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>User Creation Form</h1>
     <form>
       <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required /><br /><br />
+      <input type="text" id="username" name="username" autocomplete="off" required /><br /><br />
 
       <label for="password">Password:</label>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        required
-      /><br /><br />
+      <input type="password" id="password"name="password"autocomplete="off"required /><br /><br />
 
-      <input type="submit" value="Create User" />
+      <input type="submit" value="Create User" onclick="submit_form"  />
     </form>
+
+    <script type="text/javascript">  
+      function submit_form(){
+        if(Response.json ) 
+          alert("User has created");  
+        else
+          validationCheck();
+      }  
+
+      function validationCheck(){
+        var name=document.myform.username.value;  
+        var password=document.myform.password.value;  
+  
+        if (name==null || name==""){  
+          alert("Name can't be blank");  
+          return false;  
+        }else if(password.length<8 || password.length ==""){  
+          alert("Password must be at least 8 characters long.");  
+          return false;  
+        }  
+      }
+    </script>  
+      
   </body>
 </html>
